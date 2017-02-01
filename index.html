@@ -36,7 +36,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <body>
 
-<h1>Facililo</h1>
+<h1>Duolinga Facililo</h1>
 
 <div id="eksterhelpujo" data-bind="visible: montrasHelpon">
 <div id="helpujo">
@@ -44,10 +44,16 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
    class="fermilo" role="button">✗</span>
 <h2>Kio estas tio ĉi?</h2>
 
-<p>La "facililo" kontrolas ĉu la enskribita teksto enhavas nur la
+<p>La "facililo" de Magnus Henoch kontrolas ĉu la enskribita teksto enhavas nur la
 radikojn en la <a href="http://remush.be/tezauro/Kontakto.html">listo
 de "tre facilaj" kaj "facilaj" vortoj</a> uzata
 de <a href="http://kontakto.tejo.org">Kontakto</a>.
+Ĝi nun ankaŭ kontrolas ĉu la vortoj uzataj uzas nur la
+<a href="./duolingajradikoj.html">radikojn</a>, kiuj estas instruataj
+en la famaj kursoj de Duolingo, danke al aldono de André Lewin.
+La originala facililo troviĝas
+<a href="http://legoscia.github.io/facililo/">ĉi tie</a>.
+
 
 <noscript><p>Ĝi funkcias plene per Javascript, sed via retumilo ne
     subtenas Javascript, aŭ ĝi estas malŝaltita!  Ŝaltu ruligadon de
@@ -58,7 +64,7 @@ de <a href="http://kontakto.tejo.org">Kontakto</a>.
 
 <p>La "facililo" nur kontrolas ĉu iel eblas konstrui la enskribitajn
   vortojn per la permesataj radikoj.  Ĝi volonte akceptas sensencajn
-  vortojn, kaj neniel kontrolas gramatikon.  Mi proponas al vi ankaŭ
+  vortojn, kaj neniel kontrolas gramatikon.  Ni proponas al vi ankaŭ
   uzi
   la <a href="http://visl.sdu.dk/lingvohelpilo/">Lingvohelpilon</a>.
 
@@ -75,8 +81,8 @@ de <a href="http://kontakto.tejo.org">Kontakto</a>.
   vortolisto estas memkontraŭdira: supre ĝi havas listojn de kelkaj
   grupoj de vortoj, inter ili pronomoj, sed sube estas listo de
   mil vortoj, kie aperas preskaŭ ĉiuj el tiuj vortoj, sed mankas ĝuste
-  "ĝi", "iu" kaj "iom".  Mi ne scias kial ĝuste tiuj vortoj mankas, do
-  mi elektis sekvi <em>nur</em> la milvortan liston.
+  "ĝi", "iu" kaj "iom".  Ni ne scias kial ĝuste tiuj vortoj mankas, do
+  ni elektis sekvi <em>nur</em> la milvortan liston.
 
 <h2>Ĝi estas tro permesema</h2>
 
@@ -94,15 +100,15 @@ de <a href="http://kontakto.tejo.org">Kontakto</a>.
 <p><a href="http://github.com/legoscia/facililo">La fontokodo de la
     facililo</a> estas libere havebla laŭ la permesilo de MIT.  Tio
     signifas ke oni rajtas iel ajn uzi, kopii kaj ŝanĝi ĝin, kondiĉe
-    nur ke oni agnoskas mian aŭtorecon.</p>
+    nur ke oni agnoskas la originalan aŭtoron (Magnus Henoch).</p>
 
 <p>Ĝi estas konstruita surbaze de la
   biblioteko <a href="http://knockoutjs.com/">Knockout</a>, kiun vi
   nepre provu se vi programas en Javascript.</p>
 
-<h2>Ĝi ne estas mia originala ideo</h2>
+<h2>Ĝi ne estas originala ideo</h2>
 
-<p>Mi ekhavis inspiron de <a href="http://splasho.com/upgoer5/">The
+<p>Magnus ekhavis inspiron de <a href="http://splasho.com/upgoer5/">The
     Up-Goer Five Editor</a>, kiu simile limigas la uzanton al la mil
     plej oftaj vortoj en la angla lingvo.  Ĝi siavice estas inspirita
     la <a href="http://xkcd.com/1133/">komikso "Up Goer Five" de
@@ -138,7 +144,9 @@ de <a href="http://kontakto.tejo.org">Kontakto</a>.
 <a href="http://kontakto.tejo.org/p/facila-kaj-tre-facila.html">reguloj</a>
 kaj
 <a href="http://remush.be/tezauro/Kontakto.html">vortolisto</a> de
-Kontakto.</label>
+Kontakto, kaj laŭ la
+<a href="./duolingajradikoj.html">radiklisto</a> de
+Duolingo.</label>
 
 <a role="button"
    data-bind="click: montruHelpon"
@@ -155,6 +163,7 @@ Kontakto.</label>
 </p>
 
 <div data-bind="with: kontrolorezulto">
+  <span class="neduolinga">Neduolinga: <span data-bind="text: treFacilaj"></span></span>
   <span class="trefacila">Tre facilaj: <span data-bind="text: treFacilaj"></span></span>
   <span class="facila">Facilaj: <span data-bind="text: facilaj.length"></span></span>
   <span class="malfacila">Ne en la listo: <span data-bind="text: malfacilaj.length"></span></span>
