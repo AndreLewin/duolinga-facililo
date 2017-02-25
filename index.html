@@ -38,121 +38,17 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <h1>Duolinga Facililo</h1>
 
-<div id="eksterhelpujo" data-bind="visible: montrasHelpon">
-<div id="helpujo">
-<span title="Fermu la informfenestron" data-bind="click: malmontruHelpon"
-   class="fermilo" role="button">✗</span>
-<h2>Kio estas tio ĉi?</h2>
-
-<p>La "facililo" de Magnus Henoch kontrolas ĉu la enskribita teksto enhavas nur la
-radikojn en la <a href="http://remush.be/tezauro/Kontakto.html">listo
-de "tre facilaj" kaj "facilaj" vortoj</a> uzata
-de <a href="http://kontakto.tejo.org">Kontakto</a>.
-Ĝi nun ankaŭ kontrolas ĉu la vortoj uzataj uzas nur la
-<a href="./duolingajradikoj.html">radikojn</a>, kiuj estas instruataj
-en la famaj kursoj de Duolingo, danke al aldono de André Lewin.
-La originala facililo troviĝas
-<a href="http://legoscia.github.io/facililo/">ĉi tie</a>.
-
-
-<noscript><p>Ĝi funkcias plene per Javascript, sed via retumilo ne
-    subtenas Javascript, aŭ ĝi estas malŝaltita!  Ŝaltu ruligadon de
-    Javascript, aŭ uzu alian retumilon, por povi uzi la
-    facililon.</p></noscript>
-
-<h2>Ĝi ne estas korekteckontrolilo</h2>
-
-<p>La "facililo" nur kontrolas ĉu iel eblas konstrui la enskribitajn
-  vortojn per la permesataj radikoj.  Ĝi volonte akceptas sensencajn
-  vortojn, kaj neniel kontrolas gramatikon.  Ni proponas al vi ankaŭ
-  uzi
-  la <a href="http://visl.sdu.dk/lingvohelpilo/">Lingvohelpilon</a>.
-
-<h2>Ĝi estas tro malpermesema</h2>
-
-<p>La "facililo" estas tre simpla: ĝi rigardas nur la vortoliston.
-  Sed laŭ
-  la <a href="http://kontakto.tejo.org/p/facila-kaj-tre-facila.html">reguloj
-  de Kontakto pri facilaj tekstoj</a> oni ankaŭ rajtas uzi nomojn de
-  homoj, landoj, lingvoj ktp.  Tiajn la facililo tamen markas per ruĝa
-  koloro.
-
-<p>Cetere ĝi konsideras la vortojn "ĝi", "iu" kaj "iom" malfacilaj.  La
-  vortolisto estas memkontraŭdira: supre ĝi havas listojn de kelkaj
-  grupoj de vortoj, inter ili pronomoj, sed sube estas listo de
-  mil vortoj, kie aperas preskaŭ ĉiuj el tiuj vortoj, sed mankas ĝuste
-  "ĝi", "iu" kaj "iom".  Ni ne scias kial ĝuste tiuj vortoj mankas, do
-  ni elektis sekvi <em>nur</em> la milvortan liston.
-
-<h2>Ĝi estas tro permesema</h2>
-
-<p>Laŭ la reguloj, facila teksto uzu simplajn frazostrukturojn kaj
-  evitu pezajn kunmetaĵojn.  Pri tio tute ne zorgas la facililo; ĝi
-  volonte markas la vorton "nereĝojigeblulo" kiel facilan.
-
-<p>Cetere, kelkaj kunmetaĵoj konfuzas la facililon.  Ekzemple "idealo"
-  estas "facila" vorto laŭ la listo, sed la facililo konsideras ĝin
-  "tre facila" ĉar ĝi espektas kiel kunmetaĵo de du "tre facilaj"
-  vortoj: "ideo" kaj "al".
-
-<h2>La fontokodo estas libera</h2>
-
-<p><a href="http://github.com/legoscia/facililo">La fontokodo de la
-    facililo</a> estas libere havebla laŭ la permesilo de MIT.  Tio
-    signifas ke oni rajtas iel ajn uzi, kopii kaj ŝanĝi ĝin, kondiĉe
-    nur ke oni agnoskas la originalan aŭtoron (Magnus Henoch).</p>
-
-<p>Ĝi estas konstruita surbaze de la
-  biblioteko <a href="http://knockoutjs.com/">Knockout</a>, kiun vi
-  nepre provu se vi programas en Javascript.</p>
-
-<h2>Ĝi ne estas originala ideo</h2>
-
-<p>Magnus ekhavis inspiron de <a href="http://splasho.com/upgoer5/">The
-    Up-Goer Five Editor</a>, kiu simile limigas la uzanton al la mil
-    plej oftaj vortoj en la angla lingvo.  Ĝi siavice estas inspirita
-    la <a href="http://xkcd.com/1133/">komikso "Up Goer Five" de
-    xkcd</a>, kiu priskribas la partojn de kosmoŝipo kun la sama
-    limigo.</p>
-
-<h2>Ĉu vi havas demandon, komenton, aŭ proponon?</h2>
-
-<p>Se vi estas membro de Facebook, vi povas afiŝi komentojn
-  ĉe <a href="https://www.facebook.com/Facililo">la paĝo de
-  la Facililo</a>.
-
-<p>Se vi trovis eraron, kaj ŝatus prilabori la ilon por solvi la
-  problemon, <a href="https://github.com/legoscia/facililo/issues">kreu
-  problemraporton ĉe GitHub</a>.
-
-<p>Aŭ vi povas sendi retmesaĝon
-  al <a href="mailto:magnus.henoch@gmail.com">magnus.henoch@gmail.com</a>.
-
-<p>
-
-<button data-bind="click: malmontruHelpon">Fermi</button>
-
-</div>
-</div>
-
 <div id="ekstera">
 <p>
 <label for="tekstujo">
-<span data-bind="if: redaktebla">Verku facilan tekston</span>
-<span data-bind="if: !redaktebla()">"Facila" teksto verkita</span>
- laŭ la
-<a href="http://kontakto.tejo.org/p/facila-kaj-tre-facila.html">reguloj</a>
-kaj
-<a href="http://remush.be/tezauro/Kontakto.html">vortolisto</a> de
-Kontakto, kaj laŭ la
-<a href="./duolingajradikoj.html">radiklisto</a> de
-Duolingo.</label>
+<p>La "Duolinga facililo" kontrolas ĉu via teksto enhavas nur la
+<a href="./duolingajradikoj.html">radikojn</a> de la Angla kurso de Duolingo.
+Tio helpas skribi tekston, kiu estas facila por la plimulto de la Esperantistoj,
+kun la helpo de inteligenta kunmetado de radikoj. Ekzemploj de plifaciligitaj vortoj troviĝas
+<a href="http://bonalingvo.net/index.php/Ssv:_M">ĉi tie</a>.
 
-<a role="button"
-   data-bind="click: montruHelpon"
-   href=""
-   id="helpobutono"
-   title="Pli da informoj">?</a>
+<p>La ilo uzas "Javascript". Se problemo okazas, bonvolu aktivigi ĝin. La ilo ne estas perfekta kaj ne povas esti perfekta.
+<p>La originala "Kontakta" facililo de Magnus Henoch troviĝas <a href="http://legoscia.github.io/facililo/">ĉi tie</a>.</label>
 
 <p data-bind="if: redaktebla">
 <textarea
@@ -163,10 +59,8 @@ Duolingo.</label>
 </p>
 
 <div data-bind="with: kontrolorezulto">
-  <span class="neduolinga">Neduolinga: <span data-bind="text: treFacilaj"></span></span>
-  <span class="trefacila">Tre facilaj: <span data-bind="text: treFacilaj"></span></span>
-  <span class="facila">Facilaj: <span data-bind="text: facilaj.length"></span></span>
-  <span class="malfacila">Ne en la listo: <span data-bind="text: malfacilaj.length"></span></span>
+  <span class="trefacila">Duolinga: <span data-bind="text: treFacilaj"></span></span>
+  <span class="malfacila">Neduolinga: <span data-bind="text: malfacilaj.length"></span></span>
 
   <div id="regiloj" data-bind="if: $root.redaktebla">
   <label id="etikedoMaliksigu"><input type="checkbox" data-bind="checked: $root.maliksigu"> cx → ĉ</label>
